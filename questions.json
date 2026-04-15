@@ -4,7 +4,7 @@
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cliff_Palace-Colorado-Mesa_Verde_NP.jpg/640px-Cliff_Palace-Colorado-Mesa_Verde_NP.jpg",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cliff_Palace-Colorado-Mesa_Verde_NP.jpg?width=640",
     "question": "Which characteristic best describes how Indigenous People of the Southwest adapted to their environment?",
     "options": [
       "Building longhouses from timber",
@@ -20,7 +20,7 @@
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Long_House_Iroquois_Allen.jpg/640px-Long_House_Iroquois_Allen.jpg",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Long_House_Iroquois_Allen.jpg?width=640",
     "question": "The Indigenous Nations of the Northeast regions were most known for using which resource to build their permanent shelters?",
     "options": [
       "Sun-dried mud bricks (Adobe)",
@@ -36,7 +36,7 @@
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/America_pre-1500.png/640px-America_pre-1500.png",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/America_pre-1500.png?width=640",
     "question": "What was a primary similarity between the Indigenous People of the Mississippi River Valley and the Atlantic Seaboard?",
     "options": [
       "Both were primarily nomadic and moved with the seasons",
@@ -52,127 +52,127 @@
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Caravela_Vera_Cruz_no_rio_Tejo.jpg/640px-Caravela_Vera_Cruz_no_rio_Tejo.jpg",
-    "question": "Which technological development was most essential for the nautical exploration of the Atlantic by early European explorers?",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_Vera_Cruz_no_rio_Tejo.jpg?width=640",
+    "question": "Which development most directly enabled European explorers to sail to the Americas in the late 1400s?",
     "options": [
       "The invention of the steam engine",
-      "The development of the Astrolabe and Caravel",
-      "The creation of the printing press",
-      "The discovery of the Northwest Passage"
+      "Advances in navigation technology and ship design",
+      "The establishment of trade routes through the Sahara",
+      "The discovery of the Pacific Ocean"
     ],
-    "answer": "The development of the Astrolabe and Caravel",
-    "explanation": "The Astrolabe allowed for navigation by the stars, and the Caravel was a light, maneuverable ship designed for long ocean voyages. The steam engine (Option A) was a later industrial invention."
+    "answer": "Advances in navigation technology and ship design",
+    "explanation": "Improvements in ship design (like the caravel shown), the magnetic compass, and the astrolabe allowed European sailors to venture far into the open ocean. Without these technologies, sustained transatlantic voyages would have been impossible."
   },
   {
     "standard": "VUS.1b",
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Coronado_expedition.jpg/640px-Coronado_expedition.jpg",
-    "question": "Francisco Vázquez de Coronado is best remembered for his entrepreneurial expedition into which region of North America?",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coronado_expedition.jpg?width=640",
+    "question": "The Coronado expedition shown above was primarily motivated by which of the following?",
     "options": [
-      "The St. Lawrence River Valley",
-      "The modern-day Southeastern United States",
-      "The Southwest and Great Plains",
-      "The Chesapeake Bay region"
+      "A desire to establish peaceful trade with Native Americans",
+      "The search for mythical cities of gold and expansion of Spanish territory",
+      "A mission to convert all Native Americans to Protestantism",
+      "The need to find a water route to Asia through North America"
     ],
-    "answer": "The Southwest and Great Plains",
-    "explanation": "Coronado explored the American Southwest and parts of the Great Plains while searching for the mythical \"Seven Cities of Gold.\" Ponce de León (Option B) explored Florida."
+    "answer": "The search for mythical cities of gold and expansion of Spanish territory",
+    "explanation": "Francisco Vázquez de Coronado led his 1540–1542 expedition through the American Southwest searching for the legendary Seven Cities of Cíbola, rumored to be filled with gold. Though he found no gold, the expedition greatly expanded Spanish geographic knowledge of North America."
   },
   {
     "standard": "VUS.1b",
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/ForGoldGodGloryMural_Webs_.jpg/640px-ForGoldGodGloryMural_Webs_.jpg",
-    "question": "What was a primary \"entrepreneurial\" motivation for Christopher Columbus's 1492 voyage?",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ForGoldGodGloryMural_Webs_.jpg?width=640",
+    "question": "The mural above represents the three primary motivations for Spanish exploration and colonization. Which combination correctly identifies these motivations?",
     "options": [
-      "To prove the world was round",
-      "To establish a direct trade route to Asian markets",
-      "To find and preserve Indigenous artifacts",
-      "To map the coastline of North America"
+      "Freedom, Equality, Democracy",
+      "Gold, God, Glory",
+      "Land, Labor, Liberty",
+      "Trade, Technology, Territory"
     ],
-    "answer": "To establish a direct trade route to Asian markets",
-    "explanation": "Columbus sought a western water route to the East Indies to profit from the lucrative spice and silk trade. The idea that people thought the world was flat (Option A) is a common historical myth; educated people knew it was round."
+    "answer": "Gold, God, Glory",
+    "explanation": "Spanish conquistadors were driven by Gold (wealth and resources), God (spreading Catholicism through missionary work), and Glory (personal fame and national prestige). These three motivations shaped the entire pattern of Spanish conquest and colonization in the Americas."
   },
   {
     "standard": "VUS.1c",
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Colonization_of_the_Americas_1750.PNG/640px-Colonization_of_the_Americas_1750.PNG",
-    "question": "How did the Protestant Reformation impact the aims of European exploration?",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colonization_of_the_Americas_1750.PNG?width=640",
+    "question": "Based on the map above showing European colonization by 1750, which European nation controlled the largest territory in North America?",
     "options": [
-      "It led to a period of total peace and cooperation between nations",
-      "It fueled competition as nations sought to spread their specific faith to the Americas",
-      "It caused all European monarchs to lose interest in overseas expansion",
-      "It resulted in the immediate abolition of the transatlantic slave trade"
+      "England",
+      "France",
+      "Spain",
+      "Portugal"
     ],
-    "answer": "It fueled competition as nations sought to spread their specific faith to the Americas",
-    "explanation": "The religious rift in Europe caused Catholic nations (like Spain) and Protestant nations (like England) to compete for converts and territory in the \"New World.\""
+    "answer": "France",
+    "explanation": "By 1750, France claimed an enormous swath of territory stretching from Canada down through the Mississippi River Valley to Louisiana. Though Spain controlled large areas in the South and West, France's claimed territory by land area was the largest in North America at this time."
   },
   {
     "standard": "VUS.1c",
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Conquistador_Armor.jpg/640px-Conquistador_Armor.jpg",
-    "question": "The Spanish Reconquista influenced exploration by creating a class of soldiers known as —",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Conquistador_Armor.jpg?width=640",
+    "question": "The armor shown above, worn by Spanish conquistadors, is best associated with which of the following outcomes in the Americas?",
     "options": [
-      "Minutemen",
-      "Conquistadors",
-      "Cavaliers",
-      "Huguenots"
+      "The peaceful negotiation of land treaties with Indigenous peoples",
+      "The military conquest and subjugation of Indigenous civilizations",
+      "The establishment of democratic governments in the colonies",
+      "The protection of Indigenous peoples from European diseases"
     ],
-    "answer": "Conquistadors",
-    "explanation": "The Reconquista (the centuries-long struggle to reclaim Spain from Muslim rule) created a militant, expansionist spirit and a professional soldier class (Conquistadors) ready to explore and conquer for \"God, Gold, and Glory.\""
+    "answer": "The military conquest and subjugation of Indigenous civilizations",
+    "explanation": "Spanish conquistadors used superior military technology — including steel armor, firearms, and horses — to conquer powerful Indigenous civilizations like the Aztec and Inca empires. This military advantage, combined with devastating diseases, led to the collapse of many Indigenous societies."
   },
   {
     "standard": "VUS.1d",
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Atlantic_Triangular_Trade%2C_1500-1800s.png/640px-Atlantic_Triangular_Trade%2C_1500-1800s.png",
-    "question": "The \"Middle Passage\" refers to the part of the trade network that transported —",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atlantic_Triangular_Trade,_1500-1800s.png?width=640",
+    "question": "The diagram above illustrates the Triangular Trade system. Which leg of the triangle represented the forced transportation of enslaved Africans to the Americas?",
     "options": [
-      "Raw materials from the colonies to Europe",
-      "Enslaved Africans to the West Indies and the Americas",
-      "Manufactured goods from Europe to Africa",
-      "Furs and timber from the colonies to the West Indies"
+      "The trade of manufactured goods from Europe to Africa",
+      "The Middle Passage from Africa to the Americas",
+      "The shipment of raw materials from the Americas to Europe",
+      "The exchange of sugar and tobacco between colonies"
     ],
-    "answer": "Enslaved Africans to the West Indies and the Americas",
-    "explanation": "The Middle Passage was the horrific central leg of the Triangular Trade, specifically moving enslaved people from West Africa to the Americas."
+    "answer": "The Middle Passage from Africa to the Americas",
+    "explanation": "The Middle Passage was the horrific journey across the Atlantic in which enslaved Africans were transported to the Americas under brutal conditions. Millions died during the crossing. It formed the second 'leg' of the Triangular Trade, with European goods going to Africa and colonial raw materials returning to Europe."
   },
   {
     "standard": "VUS.1d",
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mercantilism.jpg/640px-Mercantilism.jpg",
-    "question": "Which product was a primary export from the American colonies to Europe in the 17th and 18th centuries?",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercantilism.jpg?width=640",
+    "question": "The economic theory illustrated above, which held that colonies existed to enrich the mother country, is best described as which of the following?",
     "options": [
-      "Finished textiles and clothing",
-      "Raw materials like tobacco and timber",
-      "Advanced machinery and tools",
-      "Spices such as cinnamon and cloves"
+      "Capitalism",
+      "Mercantilism",
+      "Socialism",
+      "Feudalism"
     ],
-    "answer": "Raw materials like tobacco and timber",
-    "explanation": "Under the mercantilist system, the colonies provided raw materials to the mother country. Textiles and machinery (Options A and C) were typically manufactured in Europe and sent to the colonies."
+    "answer": "Mercantilism",
+    "explanation": "Mercantilism held that a nation's wealth depended on accumulating gold and silver, and that colonies existed to supply raw materials to the mother country and serve as markets for finished goods. This theory drove European colonization and led to trade restrictions that would later fuel colonial resentment."
   },
   {
     "standard": "VUS.1d",
     "category": "Image Analysis",
     "stimulus_type": "image",
     "stimulus_content": "",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Travels_in_Brazil_%281816%29_%2814780621964%29.jpg/640px-Travels_in_Brazil_%281816%29_%2814780621964%29.jpg",
-    "question": "How did the resources of the West Indies impact the development of the British colonies?",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Travels_in_Brazil_(1816)_(14780621964).jpg?width=640",
+    "question": "Images like the one above, created by European artists depicting life in the Americas, most likely reflect which of the following historical issues?",
     "options": [
-      "The West Indies provided a surplus of food for the Northern colonies",
-      "The demand for sugar fueled the expansion of the slave trade",
-      "The West Indies were the primary source of manufactured furniture",
-      "The West Indies served as a barrier to all French exploration"
+      "An accurate and unbiased record of Indigenous and colonial life",
+      "A European perspective that often misrepresented or romanticized non-European peoples",
+      "The scientific documentation of New World species by trained naturalists",
+      "Indigenous artists reclaiming their cultural narrative"
     ],
-    "answer": "The demand for sugar fueled the expansion of the slave trade",
-    "explanation": "The labor-intensive sugar plantations in the West Indies were a driving force in the growth and persistence of the Transatlantic Slave Trade, which also impacted the labor systems of the North American colonies."
+    "answer": "A European perspective that often misrepresented or romanticized non-European peoples",
+    "explanation": "European depictions of the Americas were filtered through a European cultural lens that often romanticized, exoticized, or misrepresented Indigenous peoples and enslaved Africans. Historians must critically analyze such primary sources by considering who created them, for what audience, and with what assumptions."
   }
 ]
