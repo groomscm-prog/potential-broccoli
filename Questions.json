@@ -1,0 +1,178 @@
+[
+  {
+    "standard": "VUS.1a",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cliff_Palace-Colorado-Mesa_Verde_NP.jpg/640px-Cliff_Palace-Colorado-Mesa_Verde_NP.jpg",
+    "question": "Which characteristic best describes how Indigenous People of the Southwest adapted to their environment?",
+    "options": [
+      "Building longhouses from timber",
+      "Constructing multi-story cliff dwellings and using irrigation",
+      "Living as nomadic hunter-gatherers following bison",
+      "Developing large urban centers centered on mound-building"
+    ],
+    "answer": "Constructing multi-story cliff dwellings and using irrigation",
+    "explanation": "The Ancestral Puebloans (Southwest) used adobe and stone to build cliff dwellings and developed irrigation systems for farming in the arid desert. Timber longhouses were common in the Northeast (Option A), and mound-building was a trait of Mississippi Valley cultures (Option D)."
+  },
+  {
+    "standard": "VUS.1a",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Long_House_Iroquois_Allen.jpg/640px-Long_House_Iroquois_Allen.jpg",
+    "question": "The Indigenous Nations of the Northeast regions were most known for using which resource to build their permanent shelters?",
+    "options": [
+      "Sun-dried mud bricks (Adobe)",
+      "Buffalo hides and portable poles",
+      "Hardwood forests and timber",
+      "Whale bone and sod"
+    ],
+    "answer": "Hardwood forests and timber",
+    "explanation": "Nations like the Iroquois lived in longhouses constructed from the abundant timber found in the Eastern Woodlands. Adobe (Option A) is a Southwest trait, while buffalo hides (Option B) were used by Great Plains tribes."
+  },
+  {
+    "standard": "VUS.1a",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/America_pre-1500.png/640px-America_pre-1500.png",
+    "question": "What was a primary similarity between the Indigenous People of the Mississippi River Valley and the Atlantic Seaboard?",
+    "options": [
+      "Both were primarily nomadic and moved with the seasons",
+      "Both developed agricultural societies that utilized fertile soil",
+      "Both relied exclusively on ocean fishing for survival",
+      "Both built massive stone pyramids for religious worship"
+    ],
+    "answer": "Both developed agricultural societies that utilized fertile soil",
+    "explanation": "Both regions featured fertile land that supported settled agricultural communities growing crops like corn, beans, and squash. Large-scale stone pyramids (Option D) were more common in Mesoamerica (Aztec/Maya) than in these regions."
+  },
+  {
+    "standard": "VUS.1b",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Caravela_Vera_Cruz_no_rio_Tejo.jpg/640px-Caravela_Vera_Cruz_no_rio_Tejo.jpg",
+    "question": "Which technological development was most essential for the nautical exploration of the Atlantic by early European explorers?",
+    "options": [
+      "The invention of the steam engine",
+      "The development of the Astrolabe and Caravel",
+      "The creation of the printing press",
+      "The discovery of the Northwest Passage"
+    ],
+    "answer": "The development of the Astrolabe and Caravel",
+    "explanation": "The Astrolabe allowed for navigation by the stars, and the Caravel was a light, maneuverable ship designed for long ocean voyages. The steam engine (Option A) was a later industrial invention."
+  },
+  {
+    "standard": "VUS.1b",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Coronado_expedition.jpg/640px-Coronado_expedition.jpg",
+    "question": "Francisco Vázquez de Coronado is best remembered for his entrepreneurial expedition into which region of North America?",
+    "options": [
+      "The St. Lawrence River Valley",
+      "The modern-day Southeastern United States",
+      "The Southwest and Great Plains",
+      "The Chesapeake Bay region"
+    ],
+    "answer": "The Southwest and Great Plains",
+    "explanation": "Coronado explored the American Southwest and parts of the Great Plains while searching for the mythical \"Seven Cities of Gold.\" Ponce de León (Option B) explored Florida."
+  },
+  {
+    "standard": "VUS.1b",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/ForGoldGodGloryMural_Webs_.jpg/640px-ForGoldGodGloryMural_Webs_.jpg",
+    "question": "What was a primary \"entrepreneurial\" motivation for Christopher Columbus's 1492 voyage?",
+    "options": [
+      "To prove the world was round",
+      "To establish a direct trade route to Asian markets",
+      "To find and preserve Indigenous artifacts",
+      "To map the coastline of North America"
+    ],
+    "answer": "To establish a direct trade route to Asian markets",
+    "explanation": "Columbus sought a western water route to the East Indies to profit from the lucrative spice and silk trade. The idea that people thought the world was flat (Option A) is a common historical myth; educated people knew it was round."
+  },
+  {
+    "standard": "VUS.1c",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Colonization_of_the_Americas_1750.PNG/640px-Colonization_of_the_Americas_1750.PNG",
+    "question": "How did the Protestant Reformation impact the aims of European exploration?",
+    "options": [
+      "It led to a period of total peace and cooperation between nations",
+      "It fueled competition as nations sought to spread their specific faith to the Americas",
+      "It caused all European monarchs to lose interest in overseas expansion",
+      "It resulted in the immediate abolition of the transatlantic slave trade"
+    ],
+    "answer": "It fueled competition as nations sought to spread their specific faith to the Americas",
+    "explanation": "The religious rift in Europe caused Catholic nations (like Spain) and Protestant nations (like England) to compete for converts and territory in the \"New World.\""
+  },
+  {
+    "standard": "VUS.1c",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Conquistador_Armor.jpg/640px-Conquistador_Armor.jpg",
+    "question": "The Spanish Reconquista influenced exploration by creating a class of soldiers known as —",
+    "options": [
+      "Minutemen",
+      "Conquistadors",
+      "Cavaliers",
+      "Huguenots"
+    ],
+    "answer": "Conquistadors",
+    "explanation": "The Reconquista (the centuries-long struggle to reclaim Spain from Muslim rule) created a militant, expansionist spirit and a professional soldier class (Conquistadors) ready to explore and conquer for \"God, Gold, and Glory.\""
+  },
+  {
+    "standard": "VUS.1d",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Atlantic_Triangular_Trade%2C_1500-1800s.png/640px-Atlantic_Triangular_Trade%2C_1500-1800s.png",
+    "question": "The \"Middle Passage\" refers to the part of the trade network that transported —",
+    "options": [
+      "Raw materials from the colonies to Europe",
+      "Enslaved Africans to the West Indies and the Americas",
+      "Manufactured goods from Europe to Africa",
+      "Furs and timber from the colonies to the West Indies"
+    ],
+    "answer": "Enslaved Africans to the West Indies and the Americas",
+    "explanation": "The Middle Passage was the horrific central leg of the Triangular Trade, specifically moving enslaved people from West Africa to the Americas."
+  },
+  {
+    "standard": "VUS.1d",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mercantilism.jpg/640px-Mercantilism.jpg",
+    "question": "Which product was a primary export from the American colonies to Europe in the 17th and 18th centuries?",
+    "options": [
+      "Finished textiles and clothing",
+      "Raw materials like tobacco and timber",
+      "Advanced machinery and tools",
+      "Spices such as cinnamon and cloves"
+    ],
+    "answer": "Raw materials like tobacco and timber",
+    "explanation": "Under the mercantilist system, the colonies provided raw materials to the mother country. Textiles and machinery (Options A and C) were typically manufactured in Europe and sent to the colonies."
+  },
+  {
+    "standard": "VUS.1d",
+    "category": "Image Analysis",
+    "stimulus_type": "image",
+    "stimulus_content": "",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Travels_in_Brazil_%281816%29_%2814780621964%29.jpg/640px-Travels_in_Brazil_%281816%29_%2814780621964%29.jpg",
+    "question": "How did the resources of the West Indies impact the development of the British colonies?",
+    "options": [
+      "The West Indies provided a surplus of food for the Northern colonies",
+      "The demand for sugar fueled the expansion of the slave trade",
+      "The West Indies were the primary source of manufactured furniture",
+      "The West Indies served as a barrier to all French exploration"
+    ],
+    "answer": "The demand for sugar fueled the expansion of the slave trade",
+    "explanation": "The labor-intensive sugar plantations in the West Indies were a driving force in the growth and persistence of the Transatlantic Slave Trade, which also impacted the labor systems of the North American colonies."
+  }
+]
