@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOL Practice Quiz</title>
+ 
+  <!-- ============================================================
+    TEACHER CUSTOMIZATION ZONE — safe to edit without coding skills
+    Change the title, colors, and font below.
+  ============================================================ -->
+  <style>
+    /* ── BRAND COLORS ─────────────────────────────────────────
+       Change these two lines to match your school colors.       */
+    :root {
+      --accent:       #185FA5;   /* buttons, progress bar, links  */
+      --accent-light: #E6F1FB;   /* stimulus background tint      */
+    }
+    /* ────────────────────────────────────────────────────────── */
+ 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #f5f5f3;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 1rem 3rem;
+    }
+ 
+    /* ── PAGE HEADER ─────────────────────────────────────────── */
+    header {
+      width: 100%;
+      max-width: 640px;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #111;
+    }
+    header p {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 2px;
+    }
+ 
+    /* ── QUIZ CARD ────────────────────────────────────────────── */
+    #quiz-card {
+      background: #fff;
+      border-radius: 14px;
+      border: 1px solid #e0e0dc;
+      padding: 1.5rem;
+      width: 100%;
+      max-width: 640px;
+    }
+ 
+    /* ── PROGRESS BAR ─────────────────────────────────────────── */
+    .progress-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+    .bar-bg {
+      height: 5px;
+      background: #e8e8e4;
+      border-radius: 99px;
+      margin-bottom: 1.25rem;
+    }
+    .bar-fill {
+      height: 5px;
+      background: var(--accent);
+      border-radius: 99px;
+      transition: width 0.4s ease;
+    }
+ 
+    /* ── META TAGS (standard / category) ─────────────────────── */
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 1rem;
+    }
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--accent-light);
+      color: var(--accent);
+      border-radius: 99px;
+      padding: 3px 10px;
+    }
+ 
+    /* ── STIMULUS (image or text blockquote) ──────────────────── */
+    #stimulus-wrap {
+      margin-bottom: 1.25rem;
+    }
+    #stimulus-image {
+      width: 100%;
+      max-height: 280px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    #stimulus-text {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #222;
+      font-style: italic;
+    }
+ 
+    /* ── QUESTION TEXT ────────────────────────────────────────── */
+    #question-text {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.55;
+      color: #111;
+      margin-bottom: 1rem;
+    }
+ 
+    /* ── ANSWER OPTIONS ───────────────────────────────────────── */
+    #options-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .option-btn {
+      width: 100%;
+      text-align: left;
+      background: #fff;
+      border: 1px solid #d8d8d4;
+      border-radius: 8px;
+      padding: 0.65rem 1rem;
+      font-size: 0.9rem;
+      color: #1a1a1a;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+      line-height: 1.45;
+    }
+    .option-btn:hover:not(:disabled) {
+      background: #f7f7f5;
+      border-color: #aaa;
+    }
+    /* Correct answer — green */
+    .option-btn.correct {
+      background: #EAF3DE;
+      border-color: #639922;
+      color: #27500A;
+      font-weight: 600;
+    }
+    /* Wrong answer the student picked — red */
+    .option-btn.incorrect {
+      background: #FCEBEB;
+      border-color: #A32D2D;
+      color: #501313;
+    }
+    .option-btn:disabled { cursor: default; }
+ 
+    /* ── EXPLANATION BOX ──────────────────────────────────────── */
+    #explanation-box {
+      display: none;             /* hidden until an answer is chosen */
+      margin-top: 1rem;
+      background: #fffbea;
+      border: 1px solid #f0d070;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      color: #5a4000;
+      line-height: 1.6;
+    }
+    #explanation-box strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #7a5800;
+    }
+ 
+    /* ── NEXT BUTTON ──────────────────────────────────────────── */
+    #next-btn {
+      display: none;             /* hidden until an answer is chosen */
+      margin-top: 1rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1.4rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    #next-btn:hover { opacity: 0.88; }
+ 
+    /* ── QUIZ COMPLETE SCREEN ─────────────────────────────────── */
+    #complete-screen {
+      display: none;
+      text-align: center;
+    }
+    #complete-screen .score-num {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    #complete-screen p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    #restart-btn {
+      margin-top: 1.5rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.65rem 1.6rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    #restart-btn:hover { opacity: 0.88; }
+ 
+    /* ── LOADING / ERROR STATES ───────────────────────────────── */
+    #status-msg {
+      color: #666;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 2rem 0;
+    }
+ 
+    /* ── RESPONSIVE: phones already handled by max-width + padding */
+    @media (max-width: 480px) {
+      #quiz-card { padding: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+ 
+  <header>
+    <!-- ============================================================
+      TEACHER CUSTOMIZATION: Change the title and subtitle here.
+    ============================================================ -->
+    <h1>SOL Practice</h1>
+    <p>Virginia &amp; United States History — Stimulus-Based Review</p>
+  </header>
+ 
+  <div id="quiz-card">
+ 
+    <!-- Loading / error message shown before questions arrive -->
+    <div id="status-msg">Loading questions…</div>
+ 
+    <!-- Main quiz UI (hidden until data loads) -->
+    <div id="quiz-ui" style="display:none;">
+ 
+      <!-- Progress row -->
+      <div class="progress-row">
+        <span id="progress-label">Question 1</span>
+        <span id="score-label">0 correct</span>
+      </div>
+      <div class="bar-bg">
+        <div class="bar-fill" id="bar-fill" style="width:0%;"></div>
+      </div>
+ 
+      <!-- Standard / category tags -->
+      <div class="meta" id="meta-tags"></div>
+ 
+      <!-- Stimulus (image or text) -->
+      <div id="stimulus-wrap"></div>
+ 
+      <!-- Question -->
+      <p id="question-text"></p>
+ 
+      <!-- Answer options -->
+      <ul id="options-list"></ul>
+ 
+      <!-- Explanation (shown after answering) -->
+      <div id="explanation-box">
+        <strong>Why this answer?</strong>
+        <span id="explanation-text"></span>
+      </div>
+ 
+      <!-- Next button (shown after answering) -->
+      <button id="next-btn" onclick="nextQuestion()">Next question →</button>
+    </div>
+ 
+    <!-- Quiz complete screen (hidden until all questions answered) -->
+    <div id="complete-screen">
+      <div class="score-num" id="final-score"></div>
+      <p id="final-msg"></p>
+      <button id="restart-btn" onclick="restartQuiz()">Try again</button>
+    </div>
+ 
+  </div><!-- /#quiz-card -->
+ 
+ 
+  <script>
+    /* ============================================================
+      TEACHER CUSTOMIZATION ZONE
+      Change the path below if your questions.json file is in a
+      different folder. For example: './data/questions.json'
+    ============================================================ */
+    const QUESTIONS_FILE = './questions.json';
+ 
+    /* ────────────────────────────────────────────────────────────
+      STATE — tracks where the student is in the quiz
+    ──────────────────────────────────────────────────────────── */
+    let questions  = [];    // full array loaded from JSON
+    let order      = [];    // shuffled indices
+    let currentIdx = 0;     // which position in `order` we're on
+    let score      = 0;     // number of correct answers
+ 
+    /* ────────────────────────────────────────────────────────────
+      BOOTSTRAP — fetch the JSON file and start the quiz
+    ──────────────────────────────────────────────────────────── */
+    async function loadQuestions() {
+      try {
+        const res = await fetch(QUESTIONS_FILE);
+ 
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status} — could not fetch ${QUESTIONS_FILE}`);
+        }
+ 
+        questions = await res.json();
+ 
+        if (!Array.isArray(questions) || questions.length === 0) {
+          throw new Error('questions.json must contain a non-empty array.');
+        }
+ 
+        // Build a shuffled list of indices so the order is random each time
+        order = shuffleArray(questions.map((_, i) => i));
+ 
+        showUI();
+        renderQuestion();
+ 
+      } catch (err) {
+        document.getElementById('status-msg').innerHTML =
+          `<strong>Could not load questions.</strong><br>
+           Make sure <code>questions.json</code> is in the same folder as this file.<br>
+           <small style="color:#999;">${err.message}</small>`;
+      }
+    }
+ 
+    /* ────────────────────────────────────────────────────────────
+      RENDER — display the current question
+    ──────────────────────────────────────────────────────────── */
+    function renderQuestion() {
+      const q = questions[order[currentIdx]];
+ 
+      // Progress bar & labels
+      const total    = questions.length;
+      const answered = currentIdx;          // questions already completed
+      document.getElementById('progress-label').textContent =
+        `Question ${currentIdx + 1} of ${total}`;
+      document.getElementById('score-label').textContent =
+        `${score} correct`;
+      document.getElementById('bar-fill').style.width =
+        `${Math.round((answered / total) * 100)}%`;
+ 
+      // Meta tags (standard and category)
+      const metaEl = document.getElementById('meta-tags');
+      metaEl.innerHTML = '';
+      if (q.standard)  metaEl.innerHTML += `<span class="tag">${q.standard}</span>`;
+      if (q.category)  metaEl.innerHTML += `<span class="tag">${q.category}</span>`;
+ 
+      // Stimulus — image or text blockquote
+      const stimWrap = document.getElementById('stimulus-wrap');
+      stimWrap.innerHTML = '';
+ 
+      if (q.stimulus_type === 'image' && q.image_url) {
+        const img = document.createElement('img');
+        img.id  = 'stimulus-image';
+        img.src = q.image_url;
+        img.alt = 'Stimulus image for this question';
+        stimWrap.appendChild(img);
+ 
+      } else if (q.stimulus_type === 'text' && q.stimulus_content) {
+        const div = document.createElement('div');
+        div.id          = 'stimulus-text';
+        div.textContent = q.stimulus_content;
+        stimWrap.appendChild(div);
+      }
+ 
+      // Question text
+      document.getElementById('question-text').textContent = q.question;
+ 
+      // Answer options
+      const list = document.getElementById('options-list');
+      list.innerHTML = '';
+ 
+      // Shuffle options so correct answer isn't always in the same spot
+      const shuffledOptions = shuffleArray([...q.options]);
+ 
+      shuffledOptions.forEach((optionText, i) => {
+        const li  = document.createElement('li');
+        const btn = document.createElement('button');
+        btn.className   = 'option-btn';
+        btn.textContent = `${String.fromCharCode(65 + i)}. ${optionText}`; // A. B. C. D.
+        btn.setAttribute('data-answer', optionText);
+        btn.addEventListener('click', () => handleAnswer(btn, q.answer));
+        li.appendChild(btn);
+        list.appendChild(li);
+      });
+ 
+      // Reset explanation and next button
+      const expBox = document.getElementById('explanation-box');
+      expBox.style.display = 'none';
+      document.getElementById('next-btn').style.display = 'none';
+    }
+ 
+    /* ────────────────────────────────────────────────────────────
+      HANDLE ANSWER — called when a student clicks an option
+    ──────────────────────────────────────────────────────────── */
+    function handleAnswer(clickedBtn, correctAnswer) {
+      const allBtns = document.querySelectorAll('.option-btn');
+ 
+      // Disable all buttons so the student can't change their answer
+      allBtns.forEach(btn => { btn.disabled = true; });
+ 
+      const studentAnswer = clickedBtn.getAttribute('data-answer');
+      const isCorrect     = studentAnswer === correctAnswer;
+ 
+      if (isCorrect) {
+        score++;
+        clickedBtn.classList.add('correct');
+      } else {
+        clickedBtn.classList.add('incorrect');
+        // Also highlight which one was correct
+        allBtns.forEach(btn => {
+          if (btn.getAttribute('data-answer') === correctAnswer) {
+            btn.classList.add('correct');
+          }
+        });
+      }
+ 
+      // Show explanation
+      const q   = questions[order[currentIdx]];
+      const exp = document.getElementById('explanation-box');
+      document.getElementById('explanation-text').textContent =
+        q.explanation || 'No explanation provided for this question.';
+      exp.style.display = 'block';
+ 
+      // Show next button
+      document.getElementById('next-btn').style.display = 'inline-block';
+ 
+      // Update score label immediately
+      document.getElementById('score-label').textContent = `${score} correct`;
+    }
+ 
+    /* ────────────────────────────────────────────────────────────
+      NEXT QUESTION — advance or show completion screen
+    ──────────────────────────────────────────────────────────── */
+    function nextQuestion() {
+      currentIdx++;
+ 
+      if (currentIdx >= questions.length) {
+        showComplete();
+      } else {
+        renderQuestion();
+      }
+    }
+ 
+    /* ────────────────────────────────────────────────────────────
+      COMPLETE SCREEN — shown when all questions are answered
+    ──────────────────────────────────────────────────────────── */
+    function showComplete() {
+      document.getElementById('quiz-ui').style.display      = 'none';
+      document.getElementById('complete-screen').style.display = 'block';
+ 
+      const total   = questions.length;
+      const pct     = Math.round((score / total) * 100);
+ 
+      document.getElementById('final-score').textContent = `${score} / ${total}`;
+ 
+      let msg = '';
+      if (pct === 100)     msg = 'Perfect score! Outstanding work.';
+      else if (pct >= 80)  msg = `${pct}% — great job! Review the questions you missed.`;
+      else if (pct >= 60)  msg = `${pct}% — keep studying. Focus on your missed questions.`;
+      else                 msg = `${pct}% — don't give up! Try again after reviewing your notes.`;
+ 
+      document.getElementById('final-msg').textContent = msg;
+ 
+      // Final progress bar = full
+      document.getElementById('bar-fill').style.width = '100%';
+    }
+ 
+    /* ────────────────────────────────────────────────────────────
+      RESTART — reset state and begin again
+    ──────────────────────────────────────────────────────────── */
+    function restartQuiz() {
+      currentIdx = 0;
+      score      = 0;
+      order      = shuffleArray(questions.map((_, i) => i));
+ 
+      document.getElementById('complete-screen').style.display = 'none';
+      document.getElementById('quiz-ui').style.display         = 'block';
+ 
+      renderQuestion();
+    }
+ 
+    /* ────────────────────────────────────────────────────────────
+      HELPERS
+    ──────────────────────────────────────────────────────────── */
+    function showUI() {
+      document.getElementById('status-msg').style.display = 'none';
+      document.getElementById('quiz-ui').style.display    = 'block';
+    }
+ 
+    // Fisher-Yates shuffle — creates a randomized copy of an array
+    function shuffleArray(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+ 
+    /* ── START ── */
+    loadQuestions();
+  </script>
+ 
+</body>
+</html>
